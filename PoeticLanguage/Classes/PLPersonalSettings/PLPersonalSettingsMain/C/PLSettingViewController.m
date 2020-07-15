@@ -15,7 +15,7 @@
 #import "PLRememberViewController.h"
 #import "PLPoetryChallengeMainViewController.h"
 #import "PLCollectionViewController.h"
-#import "PLAboutViewController.h"
+//#import "PLAboutViewController.h"
 #import <Photos/Photos.h>
 #import "Masonry.h"
 
