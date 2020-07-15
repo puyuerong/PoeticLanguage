@@ -155,6 +155,14 @@
         NSNotification *exit = [NSNotification notificationWithName:@"exit" object:self];
         [[NSNotificationCenter defaultCenter] postNotification:exit];
     }
+    if (indexPath.section == 1 && indexPath.row == 4) {
+        NSNotification *about = [NSNotification notificationWithName:@"about" object:self];
+        [[NSNotificationCenter defaultCenter] postNotification:about];
+    }
+    if (indexPath.section == 1 && indexPath.row == 2) {
+        NSNotification *group = [NSNotification notificationWithName:@"group" object:self];
+        [[NSNotificationCenter defaultCenter] postNotification:group];
+    }
 }
 
 /*

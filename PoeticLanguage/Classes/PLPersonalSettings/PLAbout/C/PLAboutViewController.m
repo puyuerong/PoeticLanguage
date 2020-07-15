@@ -1,13 +1,14 @@
 //
 //  PLAboutViewController.m
-//  
+//  PoeticLanguage
 //
-//  Created by cinderella on 2020/7/14.
+//  Created by cinderella on 2020/7/15.
+//  Copyright © 2020 cinderella. All rights reserved.
 //
 
 #import "PLAboutViewController.h"
 #import "PLAboutView.h"
-#import "Masonry.h"
+#import <Masonry.h>
 
 @interface PLAboutViewController ()
 
@@ -17,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     UIImage *backImage = [[UIImage imageNamed:@"allBackgroundImage.jpg"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];  //pl_pc_fly.jpg
     UIImageView *backImageView = [[UIImageView alloc] initWithImage:backImage];
     [self.view addSubview:backImageView];
@@ -30,7 +30,6 @@
     self.myView = [[PLAboutView alloc] init];
     [self.view addSubview:_myView];
     _myView.frame = self.view.bounds;
-    
 }
 
 /*

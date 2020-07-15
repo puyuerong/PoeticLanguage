@@ -1,8 +1,8 @@
 //
-//  PLAboutView.h
+//  PLGroupView.h
 //  PoeticLanguage
 //
-//  Created by cinderella on 2020/7/14.
+//  Created by cinderella on 2020/7/15.
 //  Copyright © 2020 cinderella. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PLAboutView : UIView
+@interface PLGroupView : UIView
 
 @property (nonatomic, strong) UILabel *nameLabel;
 @property (nonatomic, strong) UILabel *contentLabel;

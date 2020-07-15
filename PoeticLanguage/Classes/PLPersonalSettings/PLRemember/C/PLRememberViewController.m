@@ -26,9 +26,9 @@
     [super viewDidLoad];
     
     UIImage *backImage = [[UIImage imageNamed:@"allBackgroundImage.jpg"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];  //pl_pc_fly.jpg
-    UIImageView *backImageView = [[UIImageView alloc] initWithImage:backImage];
-    [self.view addSubview:backImageView];
-    [backImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+    _backImageView = [[UIImageView alloc] initWithImage:backImage];
+    [self.view addSubview:_backImageView];
+    [_backImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(self.view.mas_width);
         make.left.equalTo(self.view.mas_left).offset(0);
         make.bottom.equalTo(self.view.mas_bottom).offset(0);
@@ -41,6 +41,9 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    while ([self.view.subviews lastObject] != nil && [self.view.subviews lastObject] != _backImageView) {
+        [(UIView *)[self.view.subviews lastObject] removeFromSuperview];
+    }
     [self.navigationController setNavigationBarHidden:NO animated:NO];
     self.navigationController.navigationBar.topItem.title = @"已背过的诗词";
     self.tabBarController.tabBar.hidden = NO;

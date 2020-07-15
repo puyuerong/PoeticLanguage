@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class PLReciteGetCollectsModel;
 @class PLRememberModel;
 @class PLCancelRememberModel;
+@class PLGetGroupModel;
 
 typedef void (^ErrorBlock)(NSError * _Nullable error);
 
@@ -23,6 +24,7 @@ typedef void (^PLRecitePoemsModelBlock)(PLRecitePoemsModel * _Nullable recitePoe
 typedef void (^PLReciteGetCollectsModelBlock)(PLReciteGetCollectsModel * _Nullable getCollectsModel);
 typedef void (^PLRememberModelBlock)(PLRememberModel * _Nullable rememberModel);
 typedef void (^PLCancelRememberModelBlock)(PLCancelRememberModel * _Nullable cancelRememberModel);
+typedef void (^PLGetGroupModelBlock)(PLGetGroupModel * _Nullable getGroupModel);
 
 @interface PLCollectManager : NSObject
 
@@ -33,6 +35,7 @@ typedef void (^PLCancelRememberModelBlock)(PLCancelRememberModel * _Nullable can
 - (void)getCollects:(PLReciteGetCollectsModelBlock)successBlock error:(ErrorBlock)errorBlock;
 - (void)getRemember:(PLRememberModelBlock)successBlock error:(ErrorBlock)errorBlock;
 - (void)cancelRemember:(PLCancelRememberModelBlock)successBlock error:(ErrorBlock)errorBlock id:(NSString *)sid;
+- (void)getGroup:(PLGetGroupModelBlock)successBlock error:(ErrorBlock)errorBlock id:(NSString *)pid;
 
 
 @end

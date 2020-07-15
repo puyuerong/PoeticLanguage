@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/cinderella/Documents/PoeticLanguage/PoeticLanguage/Classes/PLPersonalSettings/PLPersonalSettingsMain/V/PLAboutViewController.h">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/cinderella/Documents/PoeticLanguage/PoeticLanguage/Classes/PLPersonalSettings/PLPersonalSettingsMain/V/PLAboutViewController.m">
-   </FileRef>
-   <FileRef
       location = "group:PoeticLanguage.xcodeproj">
    </FileRef>
    <FileRef

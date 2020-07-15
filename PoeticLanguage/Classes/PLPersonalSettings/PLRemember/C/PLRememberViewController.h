@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PLRememberViewController : UIViewController
 
 @property (nonatomic, strong) PLRememberView *myView;
+@property (nonatomic, strong) UIImageView *backImageView;
 
 @end
 

@@ -104,6 +104,10 @@
 		86189269241937A700D154BE /* pl_ps_uncollect.png in Resources */ = {isa = PBXBuildFile; fileRef = 86189267241937A700D154BE /* pl_ps_uncollect.png */; };
 		8618926A241937A700D154BE /* pl_ps_collected.png in Resources */ = {isa = PBXBuildFile; fileRef = 86189268241937A700D154BE /* pl_ps_collected.png */; };
 		8618926D241944B200D154BE /* PLPSCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8618926C241944B200D154BE /* PLPSCellButton.m */; };
+		8618C26B24BE974200D44C1A /* PLGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8618C26A24BE974200D44C1A /* PLGroupViewController.m */; };
+		8618C26E24BE975400D44C1A /* PLGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8618C26D24BE975400D44C1A /* PLGroupView.m */; };
+		8618C28324BEABE800D44C1A /* PLAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8618C28224BEABE800D44C1A /* PLAboutViewController.m */; };
+		8618C28624BEAC6800D44C1A /* PLGetGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8618C28524BEAC6800D44C1A /* PLGetGroupModel.m */; };
 		861A660D23FD595B00515A0B /* PLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A660C23FD595B00515A0B /* PLRegisterViewController.m */; };
 		861A661023FD597E00515A0B /* PLRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A660F23FD597E00515A0B /* PLRegisterView.m */; };
 		861A661323FD59B000515A0B /* PLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A661223FD59B000515A0B /* PLLoginView.m */; };
@@ -134,7 +138,6 @@
 		86614428246154210045C507 /* PLKeywordPoetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86614427246154210045C507 /* PLKeywordPoetView.m */; };
 		8661442B246155480045C507 /* PLKeywordAuthorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8661442A246155480045C507 /* PLKeywordAuthorView.m */; };
 		8669AFE324BDF468009DA4AA /* PLAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669AFE224BDF468009DA4AA /* PLAboutView.m */; };
-		8669AFE624BDF486009DA4AA /* PLAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669AFE424BDF485009DA4AA /* PLAboutViewController.m */; };
 		869D340723D2000C008D761B /* PLPoetrySearchMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 869D340623D2000C008D761B /* PLPoetrySearchMainModel.m */; };
 		869D340A23D201D2008D761B /* PLPoetrySearchMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 869D340923D201D2008D761B /* PLPoetrySearchMainView.m */; };
 		869D340D23D201F3008D761B /* PLPoetrySearchMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 869D340C23D201F3008D761B /* PLPoetrySearchMainViewController.m */; };
@@ -296,6 +299,14 @@
 		86189268241937A700D154BE /* pl_ps_collected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pl_ps_collected.png; sourceTree = "<group>"; };
 		8618926B241944B200D154BE /* PLPSCellButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLPSCellButton.h; sourceTree = "<group>"; };
 		8618926C241944B200D154BE /* PLPSCellButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLPSCellButton.m; sourceTree = "<group>"; };
+		8618C26924BE974200D44C1A /* PLGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGroupViewController.h; sourceTree = "<group>"; };
+		8618C26A24BE974200D44C1A /* PLGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGroupViewController.m; sourceTree = "<group>"; };
+		8618C26C24BE975400D44C1A /* PLGroupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGroupView.h; sourceTree = "<group>"; };
+		8618C26D24BE975400D44C1A /* PLGroupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGroupView.m; sourceTree = "<group>"; };
+		8618C28124BEABE800D44C1A /* PLAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAboutViewController.h; sourceTree = "<group>"; };
+		8618C28224BEABE800D44C1A /* PLAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAboutViewController.m; sourceTree = "<group>"; };
+		8618C28424BEAC6800D44C1A /* PLGetGroupModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PLGetGroupModel.h; path = PoeticLanguage/Classes/PLPersonalSettings/PLAbout/C/PLGetGroupModel.h; sourceTree = SOURCE_ROOT; };
+		8618C28524BEAC6800D44C1A /* PLGetGroupModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PLGetGroupModel.m; path = PoeticLanguage/Classes/PLPersonalSettings/PLAbout/C/PLGetGroupModel.m; sourceTree = SOURCE_ROOT; };
 		861A660B23FD595B00515A0B /* PLRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRegisterViewController.h; sourceTree = "<group>"; };
 		861A660C23FD595B00515A0B /* PLRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRegisterViewController.m; sourceTree = "<group>"; };
 		861A660E23FD597E00515A0B /* PLRegisterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRegisterView.h; sourceTree = "<group>"; };
@@ -353,8 +364,6 @@
 		8661442A246155480045C507 /* PLKeywordAuthorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLKeywordAuthorView.m; sourceTree = "<group>"; };
 		8669AFE124BDF468009DA4AA /* PLAboutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAboutView.h; sourceTree = "<group>"; };
 		8669AFE224BDF468009DA4AA /* PLAboutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAboutView.m; sourceTree = "<group>"; };
-		8669AFE424BDF485009DA4AA /* PLAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PLAboutViewController.m; path = /Users/cinderella/Documents/PoeticLanguage/PoeticLanguage/Classes/PLPersonalSettings/PLPersonalSettingsMain/V/PLAboutViewController.m; sourceTree = "<absolute>"; };
-		8669AFE524BDF485009DA4AA /* PLAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PLAboutViewController.h; path = /Users/cinderella/Documents/PoeticLanguage/PoeticLanguage/Classes/PLPersonalSettings/PLPersonalSettingsMain/V/PLAboutViewController.h; sourceTree = "<absolute>"; };
 		869D340523D2000C008D761B /* PLPoetrySearchMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLPoetrySearchMainModel.h; sourceTree = "<group>"; };
 		869D340623D2000C008D761B /* PLPoetrySearchMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLPoetrySearchMainModel.m; sourceTree = "<group>"; };
 		869D340823D201D2008D761B /* PLPoetrySearchMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLPoetrySearchMainView.h; sourceTree = "<group>"; };
@@ -735,6 +744,33 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		8618C26624BE971C00D44C1A /* PLGroup */ = {
+			isa = PBXGroup;
+			children = (
+				8618C26824BE972C00D44C1A /* V */,
+				8618C26724BE972700D44C1A /* C */,
+			);
+			path = PLGroup;
+			sourceTree = "<group>";
+		};
+		8618C26724BE972700D44C1A /* C */ = {
+			isa = PBXGroup;
+			children = (
+				8618C26924BE974200D44C1A /* PLGroupViewController.h */,
+				8618C26A24BE974200D44C1A /* PLGroupViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		8618C26824BE972C00D44C1A /* V */ = {
+			isa = PBXGroup;
+			children = (
+				8618C26C24BE975400D44C1A /* PLGroupView.h */,
+				8618C26D24BE975400D44C1A /* PLGroupView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
 		861A660223FD586600515A0B /* PLLoginAndRegister */ = {
 			isa = PBXGroup;
 			children = (
@@ -925,8 +961,8 @@
 		8669AFDF24BDF453009DA4AA /* C */ = {
 			isa = PBXGroup;
 			children = (
-				8669AFE524BDF485009DA4AA /* PLAboutViewController.h */,
-				8669AFE424BDF485009DA4AA /* PLAboutViewController.m */,
+				8618C28124BEABE800D44C1A /* PLAboutViewController.h */,
+				8618C28224BEABE800D44C1A /* PLAboutViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -1130,6 +1166,8 @@
 				8622A4BC2469B49E00DC0A47 /* PLKeywordSearchDetailModel.m */,
 				8622A4BE2469C7B500DC0A47 /* PLKeywordAuthorModel.h */,
 				8622A4BF2469C7B500DC0A47 /* PLKeywordAuthorModel.m */,
+				8618C28424BEAC6800D44C1A /* PLGetGroupModel.h */,
+				8618C28524BEAC6800D44C1A /* PLGetGroupModel.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -1254,6 +1292,7 @@
 		86EB43AB23CF621D00BADA71 /* PLPersonalSettings */ = {
 			isa = PBXGroup;
 			children = (
+				8618C26624BE971C00D44C1A /* PLGroup */,
 				8669AFDE24BDF414009DA4AA /* PLAbout */,
 				8606F20424759A2B00883E40 /* PLPersonalUpdate */,
 				8606F1FD247542CC00883E40 /* PLRemember */,
@@ -1557,6 +1596,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8618C28624BEAC6800D44C1A /* PLGetGroupModel.m in Sources */,
 				86234B91245F186F006B16EA /* PLSettingUpdateView.m in Sources */,
 				8618926D241944B200D154BE /* PLPSCellButton.m in Sources */,
 				8604981C23E88398007C91FB /* PLDIYBabyController.m in Sources */,
@@ -1566,11 +1606,11 @@
 				8604982623E88502007C91FB /* PLDIYBabyOthersView.m in Sources */,
 				8604982023E88430007C91FB /* PLDIYBabyM.m in Sources */,
 				86059B902457FDD500A280A6 /* PLMainViewController.m in Sources */,
+				8618C28324BEABE800D44C1A /* PLAboutViewController.m in Sources */,
 				86234B97245F1A09006B16EA /* PLSettingUpdateOtherTableViewCell.m in Sources */,
 				861A661C23FD616D00515A0B /* PLLoginViewController.m in Sources */,
 				86059B8D2457E9AE00A280A6 /* PLLoginManager.m in Sources */,
 				68759990247BCD93001EF56A /* PLDailySharingModel.m in Sources */,
-				8669AFE624BDF486009DA4AA /* PLAboutViewController.m in Sources */,
 				8604F4082476EF0D0011399B /* PLCancelRememberModel.m in Sources */,
 				861A660D23FD595B00515A0B /* PLRegisterViewController.m in Sources */,
 				861203C1246B09C1005906F2 /* PLCollectModel.m in Sources */,
@@ -1599,6 +1639,7 @@
 				862510F62460256100EF6955 /* PLSettingUpdateHeaderModel.m in Sources */,
 				86B99D70240EB54B0013D89B /* PLPoetryCompetitionView.m in Sources */,
 				869D340D23D201F3008D761B /* PLPoetrySearchMainViewController.m in Sources */,
+				8618C26B24BE974200D44C1A /* PLGroupViewController.m in Sources */,
 				86BE9E1B23D6EB7B003F8DE6 /* PLKeywordSearchDetailedViewController.m in Sources */,
 				6890D10E247A80450040B9D7 /* PLDailySharingViewController.m in Sources */,
 				861E9B1024742B6A00D79651 /* PLReciteGetCollectsModel.m in Sources */,
@@ -1635,6 +1676,7 @@
 				8606F20924759AB500883E40 /* PLRememberView.m in Sources */,
 				861E9B0D2474297900D79651 /* PLRecitePoemsModel.m in Sources */,
 				68EC0B84247FB27000F0210E /* PLSaveManger.m in Sources */,
+				8618C26E24BE975400D44C1A /* PLGroupView.m in Sources */,
 				8606F20C24759C3900883E40 /* PLRememberViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

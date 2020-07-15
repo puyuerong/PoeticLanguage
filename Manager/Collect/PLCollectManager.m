@@ -15,6 +15,7 @@
 #import "PLReciteGetCollectsModel.h"
 #import "PLRememberModel.h"
 #import "PLCancelRememberModel.h"
+#import "PLGetGroupModel.h"
 #define HTTP @"http://118.31.12.175:8081/"
 
 static PLCollectManager *manager = nil;
@@ -142,6 +143,24 @@ static NSString *password;
         [httpManager POST:sureURLStr parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             PLCancelRememberModel *cancelRememberModel = [[PLCancelRememberModel alloc] initWithDictionary:responseObject error:nil];
             successBlock(cancelRememberModel);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            errorBlock(error);
+        }];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        ;
+    }];
+}
+
+- (void)getGroup:(PLGetGroupModelBlock)successBlock error:(ErrorBlock)errorBlock id:(NSString *)pid {
+    AFHTTPSessionManager *httpManager = [AFHTTPSessionManager manager];
+    NSString *sureURLStr = [NSString stringWithFormat:@"%@user/login.do?accountNumber=%@&password=%@", HTTP, account, password];
+    [httpManager POST:sureURLStr parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        AFHTTPSessionManager *httpManager = [AFHTTPSessionManager manager];
+        NSString *sureURLStr = [NSString stringWithFormat:@"%@/collect/remember.do?poetId=%@", HTTP, pid];
+        [httpManager POST:sureURLStr parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            NSLog(@"getGroupModel responseObject == %@", responseObject);
+            PLGetGroupModel *getGroupModel = [[PLGetGroupModel alloc] initWithDictionary:responseObject error:nil];
+            successBlock(getGroupModel);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             errorBlock(error);
         }];
